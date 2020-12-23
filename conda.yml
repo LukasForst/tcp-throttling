@@ -1,0 +1,10 @@
+name: tcp-throttling
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8.3
+  - pip=20.1.1
+  - scapy=2.4.4
+  - matplotlib=3.3.3
+  - pip:
+      
