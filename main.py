@@ -34,7 +34,7 @@ def throttle(pkt: Packet):
             new_tcp = TCP(dport=tcp.sport,
                           sport=tcp.dport,
                           seq=tcp.ack,
-                          ack=tcp.seq + 1 + len(tcp.payload),
+                          ack=tcp.seq + len(tcp.payload),
                           flags='A')
 
             send(new_ip / new_tcp, verbose=False)
